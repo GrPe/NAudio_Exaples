@@ -1,0 +1,18 @@
+﻿<Window x:Class="AudioPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioPlayer"
+        mc:Ignorable="d"
+        Title="Audio Player" Height="250" Width="400" ResizeMode="CanMinimize">
+    <Grid>
+        <Button Name="SelectTrackButton"  Content="Select" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="SelectTrackButton_Click"/>
+        <Label Name="CurrentTrackLabel" Content="" HorizontalAlignment="Left" Margin="90,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.355,-0.614" Width="294"/>
+        <Button Name="PlayStopButton" Content="Play" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="75" Click="PlayStopButton_Click"/>
+        <Label Content="Volume" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
+        <Slider Name="VolumeSlider" Value="75" Maximum="100" HorizontalAlignment="Left" Margin="90,108,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.082,0.945" Width="294" ValueChanged="VolumeSlider_ValueChanged"/>
+        <Button Name="StopButton" Content="Stop" HorizontalAlignment="Left" Margin="90,55,0,0" VerticalAlignment="Top" Width="75" Click="StopButton_Click"/>
+
+    </Grid>
+</Window>
